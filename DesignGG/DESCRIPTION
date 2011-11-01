@@ -1,0 +1,10 @@
+Package: designGG
+Version: 0.5-04
+Date: Oct-10-2008
+Title: Computational tool for designing genetical genomics experiments
+Author: Yang Li
+Maintainer: Yang Li <yang.li@rug.nl>
+Description: The package provides R scripts for designing genetical genomics experiments
+Depends: R (>= 2.2.0)
+License: GPL
+URL: gbic.biol.rug.nl
