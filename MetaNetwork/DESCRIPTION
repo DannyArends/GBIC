@@ -1,0 +1,20 @@
+Package: MetaNetwork
+Version: 1.0-0
+Date: 2007-02-07
+Title: A computational protocol for the genetic study of metabolic networks
+Author: Jingyuan Fu <j.fu@rug.nl>, Morris Swertz <m.a.swertz@rug.nl>,
+        Joost Keurentjes <Joost.Keurentjes@wur.nl>, Ritsert Jansen
+        <r.c.jansen@rug.nl>
+Maintainer: Groningen Bioinformatics Center GBIC, Jingyuan Fu <j.fu@rug.nl>
+Depends: qvalue
+Description: MetaNetwork maps metabolite quantitative trait loci
+        (mQTLs) underlying variation in metabolite abundance in
+        individuals of a segregating population with a two-part model
+        to account for the often observed spike in the distribution of
+        metabolite data. MetaNetwork predicts and visualizes potential
+        associations between metabolites using correlations of mQTL
+        profiles, rather than of abundance profiles. Simulation and
+        permutation procedures are used to assess statistical
+        significance.
+License: GPL version 2 or newer
+URL: http://gbic.biol.rug.nl/supplementary/2007/MetaNetwork
