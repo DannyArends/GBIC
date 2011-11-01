@@ -22,7 +22,7 @@ On the commandline use: R CMD INSTALL affyGG_X.X-X.zip or R CMD INSTALL affyGG_X
 
 References
 ----------
-Alberts R, Vera G, Jansen RC. AffyGG: computational protocols for genetical genomics with Affymetrix arrays - Bioinformatics(2008).
+Alberts R, Vera G, Jansen RC. AffyGG: computational protocols for genetical genomics with Affymetrix arrays - Bioinformatics (2008).
 
 Disclaimer
 ----------

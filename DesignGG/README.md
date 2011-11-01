@@ -20,7 +20,7 @@ On the commandline use: R CMD INSTALL affyGG_X.X-X.zip or R CMD INSTALL affyGG_X
 
 References
 ----------
-Yang Li, Morris A Swertz, Gonzalo Vera, Jingyuan Fu, Rainer Breitling and Ritsert C Jansen - designGG: an R-package and web tool for the optimal design of genetical genomics experiments
+Yang Li, Morris A Swertz, Gonzalo Vera, Jingyuan Fu, Rainer Breitling and Ritsert C Jansen - designGG: an R-package and web tool for the optimal design of genetical genomics experiments BMC Bioinformatics (2009)
 
 Disclaimer
 ----------
@@ -35,7 +35,7 @@ General Public License, version 3, for more details.
 
 A copy of the GNU General Public License, version 3, is available
 at [http://www.r-project.org/Licenses/GPL-3](http://www.r-project.org/Licenses/GPL-3 "GPL-3 Licence")
-Copyright (c) 2008-2011 
+Copyright (c) 2009-2011 
 Yang Li, 
 Morris A Swertz, 
 Gonzalo Vera, 
