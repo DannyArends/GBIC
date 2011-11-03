@@ -6,7 +6,7 @@
 }
 \usage{
   updateDesign( array.allocation, condition.allocation, nRILs, 
-                nSlides, nEnvFactors, nTuple, btwoColorArray )
+                nSlides, nEnvFactors, nTuple, bTwoColorArray )
 }
 \arguments{
   \item{array.allocation}{ 
@@ -38,8 +38,8 @@
   }
  \item{bTwoColorArray}{
       binary variable indicating experiment type: \cr
-      \code{bTwoColorArray <- T} \#for dual channel experiment \cr
-      \code{bTwoColorArray <- F} \#for single channel experiment 
+      \code{btwoColorArray <- TRUE} \#for dual channel experiment \cr
+      \code{btwoColorArray <- FALSE} \#for single channel experiment 
   }
 }
 \details{

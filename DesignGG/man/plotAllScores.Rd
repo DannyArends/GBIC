@@ -13,6 +13,17 @@
                        temperature.step, nIterations and optimality. 
                        Details can be found below. 
   }
+ \item{fileName}{
+         the final optimal design table(s) in \code{csv} format and a plot (in \code{png} 
+         format) of the all scores during SA process (if \code{plotScores} = T) will be 
+         produced. The users can specify the table and plot name by setting 
+         \code{fileName}.
+         If \code{NULL} (default) it produces files starting with \code{"myDesignGG"}.
+  }
+}
+
+\details{
+ \itemize{
   \item{scores}{
 	 A- or D- optimality score of all accepted designs during optimization
 	   process.
@@ -41,20 +52,12 @@
       which corresponds to minimum generalized variance of the
       parameter estimates.
   }
- \item{fileName}{
-         the final optimal design table(s) in \code{csv} format and a plot (in \code{png} 
-         format) of the all scores during SA process (if \code{plotScores} = T) will be 
-         produced. The users can specify the table and plot name by setting 
-         \code{fileName}.
-         If \code{NULL} (default) it produces files starting with \code{"myDesignGG"}.
   }
 }
- 
 
 \value{
   Draw a plot that visualizeds the scores (y-axis) at each iteration during 
-  the simulated annealing process (x-axis is time of moving)
- 
+  the simulated annealing process (x-axis is time of moving).
 } 
 \references{ 
 Y. Li, R. Breitling and R.C. Jansen. Generalizing genetical

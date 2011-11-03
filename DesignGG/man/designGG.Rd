@@ -8,12 +8,12 @@
   Hastings used to find the best design.
 }
 \usage{
-  designGG <- function( genotype, nSlides, nTuple, nEnvFactors, nLevels,
-                     Level=NULL, bTwoColorArray=T, initial=NULL, weight=1,
-                     region=NULL, optimality="A", method="SA", nIterations=3000,
-                     n.search=2, endTemp=1e-10, startTemp=1, maxTempStep=0.9,
-                     plotScores=T, directory=NULL, fileName=NULL, 
-                     envFactorNames=NULL, writingProcess=F )                     
+  designGG(genotype, nSlides, nTuple, nEnvFactors, nLevels,
+           Level=NULL, bTwoColorArray=TRUE, initial=NULL, weight=1,
+           region=NULL, optimality="A", method="SA", nIterations=3000,
+           n.search=2, endTemp=1e-10, startTemp=1, maxTempStep=0.9,
+           plotScores=TRUE, directory=NULL, fileName=NULL, 
+           envFactorNames=NULL, writingProcess=FALSE )                     
 }
 \arguments{
   \item{genotype}{
@@ -51,8 +51,8 @@
   }
   \item{bTwoColorArray}{
       binary variable indicating experiment type: \cr
-      \code{bTwoColorArray <- T} \#for dual channel experiment \cr
-      \code{bTwoColorArray <- F} \#for single channel experiment 
+      \code{bTwoColorArray <- TRUE} \#for dual channel experiment \cr
+      \code{bTwoColorArray <- FALSE} \#for single channel experiment 
   }
   \item{initial}{
         the starting design matrix for the algorithm. If specified, this should
@@ -209,21 +209,21 @@
   #Example:  single-channel experiment with 2 environmental factors,
   #each with 5 level, and there will be four samples per condition(nTuple=4).
   optimalDesign <- designGG ( genotype, nSlides=NULL, nTuple=4, nEnvFactors=2,
-                        nLevels=c(5,5),Level=NULL,  bTwoColorArray=F,
+                        nLevels=c(5,5),Level=NULL,  bTwoColorArray=FALSE,
                         initial=NULL, weight=1, region=NULL, optimality="A", 
                         method="SA", nIterations=100, n.search=2, endTemp=1e-10,
-                        startTemp=1, maxTempStep=0.9, plotScores=T, 
+                        startTemp=1, maxTempStep=0.9, plotScores=TRUE, 
                         directory=NULL, fileName=NULL, envFactorNames=NULL, 
-                        writingProcess=F )
+                        writingProcess=FALSE )
   #Example 2:  dual-channel experiment with 2 environmental factors,
   #each with 5 level. There are 50 slides available.
   optimalDesign <- designGG ( genotype, nSlides=50, nTuple=NULL, nEnvFactors=2,
-                        nLevels=c(5,5),Level=NULL,  bTwoColorArray=T,
+                        nLevels=c(5,5),Level=NULL,  bTwoColorArray=TRUE,
                         initial=NULL, weight=1, region=NULL, optimality="A", 
                         method="SA", nIterations=100, n.search=2, endTemp=1e-10,
-                        startTemp=1, maxTempStep=0.9, plotScores=T, 
+                        startTemp=1, maxTempStep=0.9, plotScores=TRUE, 
                         directory=NULL, fileName=NULL, envFactorNames=NULL, 
-                        writingProcess=F )
+                        writingProcess=FALSE )
   #result
   optimalDesign$arrayDesign
   optimalDesign$conditionDesign

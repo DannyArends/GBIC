@@ -6,7 +6,7 @@
         terms.
 }
 \usage{
-variableNames(nEnvFactors)
+variableNames(nEnvFactors, envFactorNames = NULL)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -14,6 +14,9 @@ variableNames(nEnvFactors)
       number of environmental factors, integer.
       When \code{nEnvFactors} is bewteen 0 and 3, all main factor(s) and
       interacting facotr(s) will be included.
+  }
+  \item{envFactorNames}{
+    names of environmental factors, character.
   }
 }
 \details{

@@ -5,7 +5,7 @@
     Update the allocation of samples onto different conditions. This is a subfunction needed for \code{updateDesign}, but is not directly used.
 }
 \usage{
-    conditionUpdate( condition.allocation, nTuple )
+    conditionUpdate( condition.allocation, nTuple, bTwoColorArray )
 }
 \arguments{
   \item{condition.allocation}{ 
@@ -18,6 +18,11 @@
       \code{nTuple} should be a real number which is larger than 1.\cr
       if \code{nTuple} < 1, the algorithm will stop and show the message, \cr
       \code{warning: "The number slides is too less to perform the experiment."}
+  }
+   \item{bTwoColorArray}{
+      binary variable indicating experiment type: \cr
+      \code{btwoColorArray <- TRUE} \#for dual channel experiment \cr
+      \code{btwoColorArray <- FALSE} \#for single channel experiment 
   }
 }
 \details{
