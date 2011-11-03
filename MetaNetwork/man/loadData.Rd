@@ -7,7 +7,7 @@
   row as columnnames. See also \code{\link{read.csv}}.
 }
 \usage{
-  mydata <- loadData(filename)
+  loadData(filename)
 }
 \arguments{
   \item{filename}{ path of the file where the data will be loaded from. }
