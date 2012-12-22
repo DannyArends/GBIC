@@ -16,5 +16,5 @@ Description: MetaNetwork maps metabolite quantitative trait loci
         profiles, rather than of abundance profiles. Simulation and
         permutation procedures are used to assess statistical
         significance.
-License: GPL version 2 or newer
+License: GPL (>= 2)
 URL: http://gbic.biol.rug.nl/supplementary/2007/MetaNetwork

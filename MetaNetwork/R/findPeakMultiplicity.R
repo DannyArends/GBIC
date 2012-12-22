@@ -29,7 +29,7 @@ findPeakMultiplicity <- function(corrZeroOrder, peaks, corrThres = 0.95, filenam
       for (j in 1:(i - 1)) {
           m1 <- peaks[which(rownames(peaks) == name[i]), 1]
           m2 <- peaks[which(rownames(peaks) == name[j]), 1]
-          massRatio <- round(m1/m2, digit = 2)
+          massRatio <- round(m1/m2, digits = 2)
           massDiff <- m1 - m2
           relationship <- ""
           if (corrZeroOrder[i, j] > corrThres) {

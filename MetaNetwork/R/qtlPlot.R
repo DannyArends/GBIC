@@ -68,7 +68,7 @@ qtlPlot <- function (markers, qtlProfiles, qtlThres, addTitle = NULL, addMarkerL
         text(markers.temp[, 2], -0.15 * ylim[2] + ylim[1], labels = rownames(markers), cex = 0.6, adj = 1, srt = 60, xpd = TRUE)
     }else{
         axis(1, markers.temp[, 2], labels = FALSE)
-        text(markers.temp[, 2], -0.15 * ylim[2] + ylim[1], labels = round(markers[,2], digit = 1), cex = 0.6, adj = 1, srt = 60, xpd = TRUE)
+        text(markers.temp[, 2], -0.15 * ylim[2] + ylim[1], labels = round(markers[,2], digits = 1), cex = 0.6, adj = 1, srt = 60, xpd = TRUE)
     }
     if (n.chr > 1) {
         for (k in 1:(n.chr - 1)) {
