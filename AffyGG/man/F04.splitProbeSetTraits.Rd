@@ -9,10 +9,10 @@
   Later, these files can be loaded and used to analyze only the probe set of interest.
 }
 \usage{
-splitProbeSetTraits( affySignals, directory )
+splitProbeSetTraits(affy.signals, directory)
 }
 \arguments{
-  \item{affySignals}{ a \code{data.frame} where on each line the probe signal 
+  \item{affy.signals}{ a \code{data.frame} where on each line the probe signal 
                       values for all .CEL files supplied are given. \cr
                       See also return value of \code{\link{rma.preprocessing}}.
   } 
@@ -73,7 +73,7 @@ Gonzalo Vera <g.vera.rodriguez@rug.nl>
   \code{\link{rma.preprocessing}}, \code{\link{auxCleanFilename}}
 }
 \examples{
-## Not Run:
+\dontrun{
 
 # We get the signals from .CEL files
 directory <- "C:/data/my_project/celfiles"
@@ -83,5 +83,5 @@ affySignals <- rma.preprocessing( directory )
 directory <- "C:/data/my_project/traitfiles"
 splitProbeSetTraits( affySignals, directory )
 
-## End(Not run)
+}
 }

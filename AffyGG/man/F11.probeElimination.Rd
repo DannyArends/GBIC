@@ -98,8 +98,7 @@ data( genotypes )
 data( batch )
 
 # We call the probe elimination function
-pe <- probeElimination( "160371_at", "D7Mit100", genotypes, 
-traits2, batch )
+pe <- probeElimination( "160371_at", "D7Mit100", genotypes, traits2, batch )
 }
 
 

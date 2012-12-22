@@ -119,8 +119,7 @@ Ritsert Jansen <r.c.jansen@rug.nl>
   \code{\link{qtlPlot.xProbe}}, \code{\link{qtlPlot.xProbeSet}}
 }
 \examples{
-## Not Run:
-
+\dontrun{
 # We load and set our arguments variables
 data(genotypes)
 data(batch)
@@ -153,5 +152,5 @@ affyGG( genotypes=genotypes[1:100,], batch=batch, directory=directory,
         markersPos=markersPos[1:100], probesPos=probesPos, 
         chrOffsets=chrOffsets)
 
-## End(Not run)
+}
 }

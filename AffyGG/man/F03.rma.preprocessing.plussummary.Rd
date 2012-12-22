@@ -86,7 +86,7 @@ Ritsert Jansen <r.c.jansen@rug.nl>
   \code{\link{rma.preprocessing}}
 }
 \examples{
-## Not Run:
+\dontrun{
 
 # We set the directory where the .CEL files are placed
 directory <- "C:/data/my_project/celfiles"
@@ -100,5 +100,5 @@ ps.summ <- rma.preprocessing.plussummary( directory, "ps.summ.txt" )
 # We check the content of the output
 ps.summ     
 
-## End(Not run)
+}
 }

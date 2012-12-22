@@ -51,8 +51,7 @@ Ritsert Jansen <r.c.jansen@rug.nl>
 }
 \examples{
 # We indicate the bp positions of the probes on the mRNA
-pos<-c(1893, 1894, 1897, 1904, 1906, 1911, 1912, 1913, 
-1916, 1925, 1929, 1933, 1934, 1944, 1948, 1955)
+pos<-c(1893, 1894, 1897, 1904, 1906, 1911, 1912, 1913, 1916, 1925, 1929, 1933, 1934, 1944, 1948, 1955)
 
 # We retrieve the different alleles for one marker 
 # (these values: 1 or 2, can be used like color codes)

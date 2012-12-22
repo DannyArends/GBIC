@@ -79,7 +79,7 @@ Ritsert Jansen <r.c.jansen@rug.nl>
 }
 
 \examples{
-## Not Run:
+\dontrun{
 
 # We set the directory where the .CEL files are placed
 directory <- "C:/data/my_project/celfiles"
@@ -97,5 +97,5 @@ probesignals <- rma.preprocessing( directory, celfiles,
 dim(probesignals)               
 head(probesignals)
 
-## End(Not run)
+}
 }
