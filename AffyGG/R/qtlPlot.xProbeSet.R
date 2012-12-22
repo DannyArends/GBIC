@@ -11,7 +11,7 @@ qtlPlot.xProbeSet <- function( probesetName, markersPos,
 {
   if( !is.null( filename ) )
   {
-    png( file=filename, bg="white", width=1100, height=300 )
+    png( filename=filename, bg="white", width=1100, height=300 )
   }
 
   markersPos <- markersPos[,2]  # We only use the bp column

@@ -1,6 +1,7 @@
 # Function name: affyGG
 # Author: Rudi Alberts <r.alberts@rug.nl>
 # Maintainer: Gonzalo Vera <g.vera.rodriguez@rug.nl>
+# GIT Maintainer: Danny Arends <d.arends@gmail.com>
 # Version: 1.0.1
 # Date: 1 May. 2007
 
