@@ -6,11 +6,11 @@
 
 
 designGG <- function( genotype, nSlides, nTuple, nEnvFactors, nLevels,
-                      Level=NULL,  bTwoColorArray=T, initial=NULL, weight=1,
+                      Level=NULL,  bTwoColorArray=TRUE, initial=NULL, weight=1,
                       region=NULL, optimality="A", method="SA",nIterations=3000,
                       n.search=2, endTemp=1e-10, startTemp=1, maxTempStep=0.9,
-                      plotScores=T, directory=NULL  ,fileName=NULL, envFactorNames=NULL,
-                      writingProcess=F)
+                      plotScores=TRUE, directory=NULL  ,fileName=NULL, envFactorNames=NULL,
+                      writingProcess=FALSE)
 {
     #parameter setting and checking
     nRILs       <- ncol(genotype)
@@ -142,7 +142,7 @@ designGG <- function( genotype, nSlides, nTuple, nEnvFactors, nLevels,
             {
                 processFile <- file("processing.txt","w")
                 cat(format(round(100*(i+nIterations*(i.search-1))/(n.search*
-                            nIterations),digit=2),nsmall=2), file = processFile)
+                            nIterations),digits=2),nsmall=2), file = processFile)
                 close(processFile)
             }
         }        #S,A ends

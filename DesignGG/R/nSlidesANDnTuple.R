@@ -31,7 +31,7 @@ nSlidesANDnTuple <- function(nLevels,nSlides,nTuple,bTwoColorArray)
         if ( nTuple < 1 )
         { stop ( "The number of slides is too small to perform the experiment." )}
         if ( bTwoColorArray )
-        {   if ( round((nConditions*nTuple/2)%%(floor(nTuple/2)),digit=2) == 0 )
+        {   if ( round((nConditions*nTuple/2)%%(floor(nTuple/2)),digits=2) == 0 )
                 {
                     nSlides <- nConditions*nTuple/2
                 } else
@@ -40,7 +40,7 @@ nSlidesANDnTuple <- function(nLevels,nSlides,nTuple,bTwoColorArray)
                 }
         }else
         {
-            if ( round(floor(nConditions*nTuple)-(nConditions*nTuple),digit=3) == 0 )
+            if ( round(floor(nConditions*nTuple)-(nConditions*nTuple),digits=3) == 0 )
                 {
                     nSlides <- nConditions*nTuple
                 } else

@@ -18,12 +18,12 @@ plotAllScores <- function(plot.obj,fileName=NULL)
     sciNotation <- function(x, digits = 1) {
       if (!x) return(0)
       exponent <- floor(log10(x))
-      base <- round(x / 10^exponent, digits)     
+      base <- round(x / 10^exponent, digits=digits)     
       return(as.expression(substitute(base * 10^exponent, 
         list(base = base, exponent = exponent)))) 
         }
     if(!is.null(fileName)){                           
-    png(file=paste(fileName,"SAplot.png", sep=""), width=580, height=480,
+    png(filename = paste(fileName,"SAplot.png", sep=""), width=580, height=480,
         bg=" light gray")}
 
     par( mfrow=c(2,1) )
@@ -39,7 +39,7 @@ plotAllScores <- function(plot.obj,fileName=NULL)
 
     text( x=0.9*length(scores),
           y=ylim[1]+0.85*(ylim[2]-ylim[1]),
-          paste("T step=", round(temperature.step,digit=3), sep="") )
+          paste("T step=", round(temperature.step,digits=3), sep="") )
 
     text( x=0.9*length(scores),
           y=ylim[1]+0.75*(ylim[2]-ylim[1]),
