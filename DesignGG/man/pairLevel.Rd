@@ -20,9 +20,7 @@
 \details{
     This function is used only for two-color array.
 }
-\value{
-  
-}
+\value{TODO}
 \references{  
 Y. Li, R. Breitling and R.C. Jansen. Generalizing genetical
      genomics: the added value from environmental perturbation, Trends Genet

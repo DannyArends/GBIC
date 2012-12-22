@@ -39,5 +39,7 @@ http://gbic.biol.rug.nl/designGG
         }
 
 \seealso{ \code{\link{variableNames}}}
-\examples{}
+\examples{
+#TODO
+}
 \keyword{method}
