@@ -8,8 +8,7 @@
 affyGG <- function( genotypes, batch, nProbes=16, nIndiv=30, n.simulations=100,
                     directory=NULL, celfiles, probelevel=T,
                     probesetName=NULL, overwrite=F, n.Plots=5,
-                    markersPos=NULL, probesPos=NULL, chrOffsets=NULL )
-{
+                    markersPos=NULL, probesPos=NULL, chrOffsets=NULL ){
 
   # 0. Welcome
   cat( "\nPackage: affyGG \nComputational protocols for genetical genomics analyses with Affymetrix arrays. \n\n" )

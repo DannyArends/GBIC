@@ -5,6 +5,6 @@ Title: Computational protocols for genetical genomics analyses with Affymetrix a
 Author: Rudi Alberts <ralberts@rug.nl>, with contributions from Gonzalo Vera <g.vera.rodriguez@rug.nl>
 Maintainer: GBiC Team <gbic.maintainer@rug.nl>
 Description: The package provides R scripts for pre-processing, QTL analysis and visualization of Affymetrix array data in genetical genomics experiments
-Depends: R (>= 2.4.0), affy, nlme
+Depends: R (>= 2.4.0), affy, cdfpackage, nlme
 License: GPL (>= 2)
 URL: http://gbic.biol.rug.nl/tools/R/packages/affyGG
